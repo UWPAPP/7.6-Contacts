@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="_7._6_Contacts.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_7._6_Contacts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="10,100,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="PickContactsButton" Content="选择多个联系人" Click="PickContactsButton_Click"/>
+        <Button x:Name="PickAContactButton" Content="选择联系人" Click="PickAContactButton_Click"/>
+        <TextBlock x:Name="OutputFields" Foreground="Red"/>
+        <TextBlock x:Name="OutputEmpty" Foreground="Yellow"/>
+        <TextBlock x:Name="OutputName" Foreground="Blue"/>
+
+        <TextBlock x:Name="OutputEmails" Foreground="Brown"/>
+        <TextBlock x:Name="OutputPhoneNumbers" Foreground="Gray"/>
+        <TextBlock x:Name="OutputAddresses" Foreground="Green"/>
+    </StackPanel>
+</Page>
